@@ -16,13 +16,13 @@
   },
   "files": [
     "commands",
-    "task.js",
+    "task.cjs",
     "cli.js"
   ],
   "bin": {
     "getbump": "cli.js"
   },
-  "main": "task.js",
+  "main": "task.cjs",
   "scripts": {
     "dev": "node cli.js c",
     "lint": "biome lint .",

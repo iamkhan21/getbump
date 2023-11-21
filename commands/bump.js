@@ -1,7 +1,7 @@
-import path from "node:path";
 import fs from "node:fs";
-import {command} from "cleye";
+import path from "node:path";
 import * as p from "@clack/prompts";
+import { command } from "cleye";
 
 const gitLabApi = "https://gitlab.com/api/v4";
 
@@ -45,7 +45,10 @@ async function checkIsProjectHasNewerVersion(
 		});
 
 		if (!response.ok) {
-			throw new Error(`Error: ${response.status}`);
+			return {
+				projectName,
+				error: response.status,
+			};
 		}
 
 		const packageJson = await response.json();
@@ -144,7 +147,6 @@ async function bump(argv) {
 			failures.push(result.value);
 		}
 	}
-
 
 	if (failures.length > 0) {
 		const failedProjects = failures

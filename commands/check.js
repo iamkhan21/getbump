@@ -9,8 +9,6 @@ function check() {
 		return;
 	}
 
-
-
 	const microfrontends = getMicrofrontends();
 
 	if (!(microfrontends && Object.keys(microfrontends).length)) {
@@ -21,14 +19,16 @@ function check() {
 	console.log("All good");
 }
 
-const checkCommand = command({
-	name: "check",
-	alias: "c",
-	help: {
-		description:
-			"Check if host app is prepared to new format of managing versions of shared MFEs and has all required",
+const checkCommand = command(
+	{
+		name: "check",
+		alias: "c",
+		help: {
+			description:
+				"Check if host app is prepared to new format of managing versions of shared MFEs and has all required",
+		},
 	},
-
-}, check);
+	check,
+);
 
 export default checkCommand;

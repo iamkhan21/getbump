@@ -1,6 +1,18 @@
 # Changelog
 
 
+## v1.3.0
+
+[compare changes](https://github.com/iamkhan21/getbump/compare/v1.2.0...v1.3.0)
+
+### 🚀 Enhancements
+
+- Remove 'prepare' command and improve 'bump' functionality ([f3e2f6b](https://github.com/iamkhan21/getbump/commit/f3e2f6b))
+
+### ❤️ Contributors
+
+- Ivan Khanevich <mail@iamkhan.tech>
+
 ## v1.2.0
 
 [compare changes](https://github.com/iamkhan21/getbump/compare/v1.1.0...v1.2.0)

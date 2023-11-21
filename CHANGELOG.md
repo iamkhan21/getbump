@@ -1,6 +1,18 @@
 # Changelog
 
 
+## v1.4.0
+
+[compare changes](https://github.com/iamkhan21/getbump/compare/v1.3.0...v1.4.0)
+
+### 🚀 Enhancements
+
+- Replace ES6 import/export with CommonJS, adjust task logic and bump command ([d19369d](https://github.com/iamkhan21/getbump/commit/d19369d))
+
+### ❤️ Contributors
+
+- Ivan Khanevich <mail@iamkhan.tech>
+
 ## v1.3.0
 
 [compare changes](https://github.com/iamkhan21/getbump/compare/v1.2.0...v1.3.0)

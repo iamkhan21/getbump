@@ -1,6 +1,6 @@
 {
   "name": "getbump",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "MFE version bumping tool",
   "keywords": [],
   "author": "Ivan Khanevich <mail@iamkhan.tech>",
@@ -24,7 +24,7 @@
     "dev": "node cli.js",
     "lint": "biome lint .",
     "lint:fix": "biome check --apply-unsafe .",
-    "release": "npm format && changelogen --release && npm publish && git push --follow-tags",
+    "release": "changelogen --release && npm publish && git push --follow-tags",
     "format": "npx @biomejs/biome format --write ."
   },
   "devDependencies": {

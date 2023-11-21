@@ -10,4 +10,6 @@ export const prepareCommand = command({
 	},
 });
 
-export function prepare() {}
+export function prepare() {
+	console.log("prepare");
+}

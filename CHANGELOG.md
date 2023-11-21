@@ -38,5 +38,5 @@
 
 ### ❤️ Contributors
 
-- Ivan Khanevich <help@iamkhan.tech>
+- Ivan Khanevich <mail@iamkhan.tech>
 

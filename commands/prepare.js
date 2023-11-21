@@ -1,15 +1,17 @@
 import { command } from "cleye";
-import { COMMANDS } from "./_config.js";
 
-export const prepareCommand = command({
-	name: COMMANDS.PREPARE,
+function prepare() {
+	console.log("prepare");
+}
+
+const prepareCommand = command({
+	name: "prepare",
 	alias: "p",
 	help: {
 		description:
 			"Prepare host app to new format of managing versions of shared MFEs",
 	},
+	prepare,
 });
 
-export function prepare() {
-	console.log("prepare");
-}
+export default prepareCommand;

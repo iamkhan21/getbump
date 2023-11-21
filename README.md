@@ -6,12 +6,6 @@
 
 A simple tool to bump your MFEs version number in your package.json file.
 
-## Usage
-```sh
-# By default, getbump will bump your package.json MFEs version number
-npx getbump
-```
-
 ```sh
 # Bump your package.json MFEs version number
 npx getbump bump
@@ -20,6 +14,11 @@ npx getbump bump
 ```sh
 # Prepare your host app to new management of MFEs
 npx getbump prepare
+```
+
+```sh
+# Check is your host app is ready to new management of MFEs
+npx getbump check
 ```
 
 ## License

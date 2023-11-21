@@ -22,7 +22,7 @@
     "getbump": "cli.js"
   },
   "scripts": {
-    "dev": "node cli.js",
+    "dev": "node cli.js c",
     "lint": "biome lint .",
     "lint:fix": "biome check --apply-unsafe .",
     "release": "npm run lint:fix && changelogen --release && npm publish && git push --follow-tags",

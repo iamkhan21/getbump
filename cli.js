@@ -1,14 +1,14 @@
 #!/usr/bin/env node
 
-import { cli } from "cleye";
 import fs from "node:fs";
+import { cli } from "cleye";
 import { COMMANDS } from "./commands/_config.js";
 import { bump, bumpCommand } from "./commands/bump.js";
 import { prepare, prepareCommand } from "./commands/prepare.js";
 
-const packageJson = JSON.parse(fs.readFileSync("./package.json", "utf-8"));
+const packageJson = JSON.parse(fs.readFileSync("./package.json", "utf8"));
 
-/*const main = defineCommand({
+/* const main = defineCommand({
     meta: {
         name: "getbump",
         version:packageJson.version,
@@ -30,7 +30,7 @@ const packageJson = JSON.parse(fs.readFileSync("./package.json", "utf-8"));
     },
 });
 
-runMain(main);*/
+runMain(main); */
 
 const getCliArguments = () =>
 	cli({
@@ -45,14 +45,17 @@ const getCliArguments = () =>
 	const selectedCommand = argv.command || COMMANDS.BUMP;
 
 	switch (selectedCommand) {
-		case COMMANDS.BUMP:
+		case COMMANDS.BUMP: {
 			bump();
 			break;
-		case COMMANDS.PREPARE:
+		}
+		case COMMANDS.PREPARE: {
 			prepare();
 			break;
-		default:
+		}
+		default: {
 			console.log("There is no such command");
 			break;
+		}
 	}
 })();

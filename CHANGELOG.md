@@ -1,6 +1,18 @@
 # Changelog
 
 
+## v1.0.2
+
+[compare changes](https://github.com/iamkhan21/getbump/compare/v1.0.1...v1.0.2)
+
+### 🏡 Chore
+
+- Update contact info and correct repository name ([cd09dcb](https://github.com/iamkhan21/getbump/commit/cd09dcb))
+
+### ❤️ Contributors
+
+- Ivan Khanevich <mail@iamkhan.tech>
+
 ## v1.0.1
 
 

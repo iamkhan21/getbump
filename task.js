@@ -1,13 +1,11 @@
-import { json, lines } from "mrm-core";
+const { lines, json } = require("mrm-core");
 
-export default function () {
+module.exports = function () {
 	// ES6 arrow functions and template literals
 	const updatePackageJson = (packageJson) => {
 		packageJson
 			.merge({
-				scripts: {
-					start: "node app.js",
-				},
+				microfrontends: {},
 			})
 			.save();
 	};
@@ -18,4 +16,4 @@ export default function () {
 
 	// Additional task logic
 	// ...
-}
+};

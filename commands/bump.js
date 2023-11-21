@@ -13,7 +13,7 @@ export function readTokenFromNpmrc() {
 		const npmrcContent = fs.readFileSync(npmrcPath, "utf8");
 		const tokenLine = npmrcContent
 			.split(/\r?\n/)
-			.find((line) => line.includes("_authToken"));
+			.find((line) => line.includes("_authToken") && line.includes("gitlab"));
 		const tokenMatch = tokenLine.match(/_authToken=(.*)/);
 		return tokenMatch ? tokenMatch[1] : null;
 	} catch (error) {

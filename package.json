@@ -3,14 +3,14 @@
   "version": "1.0.1",
   "description": "MFE version bumping tool",
   "keywords": [],
-  "author": "Ivan Khanevich <mail@iamkhan.tech>",
+  "author": "Ivan Khanevich <help@iamkhan.tech>",
   "license": "MIT",
   "type": "module",
   "bugs": {
     "url": "https://github.com/iamkhan21/getbump/issues"
   },
   "homepage": "https://github.com/iamkhan21/getbump#readme",
-  "repository": "iamkhan21/bumpify",
+  "repository": "iamkhan21/getbump",
   "engines": {
     "node": ">=18.0.0"
   },

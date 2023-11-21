@@ -28,16 +28,17 @@ function getPackageJson() {
 }
 
 // check is project has newer version
-async function checkIsProjectHasNewerVersion(
+async function checkIsProjectHasNewerVersion({
 	projectName,
 	projectGroup,
+	branch,
 	gitlabToken,
 	currentVersion,
-) {
+}) {
 	const encodedProjectName = encodeURIComponent(
 		[projectGroup, projectName].join("/"),
 	);
-	const url = `${gitLabApi}/projects/${encodedProjectName}/repository/files/package.json/raw`;
+	const url = `${gitLabApi}/projects/${encodedProjectName}/repository/files/package.json/raw?ref=${branch}`;
 
 	try {
 		const response = await fetch(url, {
@@ -123,15 +124,16 @@ async function bump(argv) {
 
 	const mfes = Object.entries(microfrontends);
 
-	const projectGroup = argv.flags.group;
+	const { group: projectGroup, branch } = argv.flags;
 
 	const requests = mfes.map(([projectName, currentVersion]) =>
-		checkIsProjectHasNewerVersion(
+		checkIsProjectHasNewerVersion({
 			projectName,
 			projectGroup,
+			branch,
 			gitlabToken,
 			currentVersion,
-		),
+		}),
 	);
 
 	const results = await Promise.allSettled(requests);
@@ -194,6 +196,13 @@ const bumpCommand = command(
 				description:
 					"GitLab project group (-g <group-name>, --group <group-name>)",
 				alias: "g",
+			},
+			branch: {
+				type: String,
+				description:
+					"GitLab branch name (-b <branch-name>, --branch <branch-name>)",
+				alias: "b",
+				default: "main",
 			},
 		},
 		help: {

@@ -7,17 +7,17 @@
 A simple tool to bump your MFEs version number in your package.json file.
 
 ```sh
-# Bump your package.json MFEs version number
+# Bump your package.json MFEs version number (you can use bump or b)
 npx getbump bump
 ```
 
 ```sh
-# Prepare your host app to new management of MFEs
-npx getbump prepare
+# Bump your package.json MFEs version number from specific branch and group
+npx getbump b -g <project-group> -b <project-branch>
 ```
 
 ```sh
-# Check is your host app is ready to new management of MFEs
+# Check is your host app is ready to new management of MFEs (you can use check or c)
 npx getbump check
 ```
 

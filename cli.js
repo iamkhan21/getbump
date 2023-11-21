@@ -1,10 +1,10 @@
 #!/usr/bin/env node
 
-import {cli} from "cleye";
+import { cli } from "cleye";
 import fs from "node:fs";
-import {COMMANDS} from "./commands/_config.js";
-import {bump, bumpCommand} from "./commands/bump.js";
-import {prepare, prepareCommand} from "./commands/prepare.js";
+import { COMMANDS } from "./commands/_config.js";
+import { bump, bumpCommand } from "./commands/bump.js";
+import { prepare, prepareCommand } from "./commands/prepare.js";
 
 const packageJson = JSON.parse(fs.readFileSync("./package.json", "utf-8"));
 

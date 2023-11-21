@@ -6,7 +6,7 @@ export const bumpCommand = command({
 	alias: "b",
 	help: {
 		description: "Run interactive CLI to bump shared MFEs version",
-	}
+	},
 });
 
 export function bump() {

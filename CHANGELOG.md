@@ -1,6 +1,22 @@
 # Changelog
 
 
+## v1.1.0
+
+[compare changes](https://github.com/iamkhan21/getbump/compare/v1.0.3...v1.1.0)
+
+### 🚀 Enhancements
+
+- Add '@clack/prompts' to dependencies and update 'bump' function ([715e509](https://github.com/iamkhan21/getbump/commit/715e509))
+
+### 🏡 Chore
+
+- Update release process and maintain package consistency ([03c3bb1](https://github.com/iamkhan21/getbump/commit/03c3bb1))
+
+### ❤️ Contributors
+
+- Ivan Khanevich <mail@iamkhan.tech>
+
 ## v1.0.3
 
 [compare changes](https://github.com/iamkhan21/getbump/compare/v1.0.2...v1.0.3)

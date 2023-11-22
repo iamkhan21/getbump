@@ -1,11 +1,15 @@
 import fs from "node:fs";
 import path from "node:path";
+import { fileURLToPath } from "node:url";
 import { intro, log, outro, spinner, text } from "@clack/prompts";
 import { command } from "cleye";
 import { run as jscodeshift } from "jscodeshift/src/Runner.js";
 
-const TRANSFORM_PATH_PREPARE = path.join(__dirname, './tasks/prepare.cjs');
-const TRANSFORM_PATH_UPDATE = path.join(__dirname, './tasks/update.cjs');
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+
+const TRANSFORM_PATH_PREPARE = path.join(__dirname, "./tasks/prepare.cjs");
+const TRANSFORM_PATH_UPDATE = path.join(__dirname, "./tasks/update.cjs");
 
 const MFE_PATH = ["webpack/microFrontendURL.js"];
 

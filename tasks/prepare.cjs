@@ -65,9 +65,8 @@ async function transformProdObject(j, root, microfrontends) {
 			(path) => path.parent.node.key && path.parent.node.key.name === "prod",
 		);
 
-	const paths = prodObject.find(j.Property);
-
-	for (const path of paths) {
+	// biome-ignore lint: forEach is inbuilt method to iterate nodes
+	prodObject.find(j.Property).forEach((path) => {
 		const key = path.node.key.name;
 		const { baseUrl, version, filePath } = splitString(path.node.value.value);
 		microfrontends[key] = version;
@@ -87,7 +86,7 @@ async function transformProdObject(j, root, microfrontends) {
 				),
 			],
 		);
-	}
+	});
 }
 
 function updatePackageJson(microfrontends) {

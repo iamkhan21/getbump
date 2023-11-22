@@ -1,6 +1,18 @@
 # Changelog
 
 
+## v1.5.5
+
+[compare changes](https://github.com/iamkhan21/getbump/compare/v1.5.4...v1.5.5)
+
+### 🏡 Chore
+
+- Update path resolution in `prepare.js` ([9d00e82](https://github.com/iamkhan21/getbump/commit/9d00e82))
+
+### ❤️ Contributors
+
+- Ivan Khanevich <mail@iamkhan.tech>
+
 ## v1.5.4
 
 [compare changes](https://github.com/iamkhan21/getbump/compare/v1.5.3...v1.5.4)

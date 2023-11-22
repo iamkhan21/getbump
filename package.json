@@ -1,6 +1,6 @@
 {
   "name": "getbump",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "MFE version bumping tool",
   "keywords": [],
   "author": "Ivan Khanevich <help@iamkhan.tech>",

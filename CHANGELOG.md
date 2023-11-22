@@ -1,6 +1,22 @@
 # Changelog
 
 
+## v2.0.1
+
+[compare changes](https://github.com/iamkhan21/getbump/compare/v2.0.0...v2.0.1)
+
+### 🩹 Fixes
+
+- Refactor update.cjs for better object iteration and key assignment ([a268dbb](https://github.com/iamkhan21/getbump/commit/a268dbb))
+
+### 🏡 Chore
+
+- Formatting ([b78e7a4](https://github.com/iamkhan21/getbump/commit/b78e7a4))
+
+### ❤️ Contributors
+
+- Ivan Khanevich <mail@iamkhan.tech>
+
 ## v2.0.0
 
 [compare changes](https://github.com/iamkhan21/getbump/compare/v1.5.5...v2.0.0)

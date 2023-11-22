@@ -14,13 +14,13 @@ module.exports = function (fileInfo, api, options) {
 	const packageJson = JSON.parse(fs.readFileSync(packageJsonPath, "utf8"));
 
 	// Update microfrontends keys in package.json
-	Object.keys(nameMapping).forEach((oldKey) => {
-		if (packageJson.microfrontends && packageJson.microfrontends[oldKey]) {
+	for (const oldKey of Object.keys()) {
+		if (packageJson.microfrontends?.[oldKey]) {
 			packageJson.microfrontends[nameMapping[oldKey]] =
 				packageJson.microfrontends[oldKey];
 			delete packageJson.microfrontends[oldKey];
 		}
-	});
+	}
 
 	// Write the updated package.json back to the file
 	fs.writeFileSync(

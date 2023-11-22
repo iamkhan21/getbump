@@ -1,11 +1,11 @@
+import fs from "node:fs";
+import path from "node:path";
+import { intro, log, outro, spinner, text } from "@clack/prompts";
 import { command } from "cleye";
 import { run as jscodeshift } from "jscodeshift/src/Runner.js";
-import path from "node:path";
-import fs from "node:fs";
-import { intro, log, outro, spinner, text } from "@clack/prompts";
 
-const TRANSFORM_PATH_PREPARE = path.resolve("../tasks/prepare.cjs");
-const TRANSFORM_PATH_UPDATE = path.resolve("../tasks/update.cjs");
+const TRANSFORM_PATH_PREPARE = path.resolve("./tasks/prepare.cjs");
+const TRANSFORM_PATH_UPDATE = path.resolve("./tasks/update.cjs");
 const MFE_PATH = ["webpack/microFrontendURL.js"];
 
 async function runCodeshift(transformPath, paths, options = {}) {
@@ -40,7 +40,7 @@ async function getNewMfeName(mfeName) {
 	const response = await text({
 		message: `What is the gitlab project name in URL for ${mfeName}?`,
 		validate(value) {
-			if (value.trim().length === 0) return `Value is required!`;
+			if (value.trim().length === 0) return "Value is required!";
 		},
 	});
 
@@ -80,14 +80,16 @@ async function prepare() {
 	}
 }
 
-const prepareCommand = command({
-	name: "prepare",
-	alias: "p",
-	help: {
-		description:
-			"Prepare host app to new format of managing versions of shared MFEs",
+const prepareCommand = command(
+	{
+		name: "prepare",
+		alias: "p",
+		help: {
+			description:
+				"Prepare host app to new format of managing versions of shared MFEs",
+		},
 	},
 	prepare,
-});
+);
 
 export default prepareCommand;

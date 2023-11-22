@@ -1,6 +1,18 @@
 # Changelog
 
 
+## v2.1.0
+
+[compare changes](https://github.com/iamkhan21/getbump/compare/v2.0.2...v2.1.0)
+
+### 🚀 Enhancements
+
+- Add new CLI command to register microfrontend ([f71ede7](https://github.com/iamkhan21/getbump/commit/f71ede7))
+
+### ❤️ Contributors
+
+- Ivan Khanevich <mail@iamkhan.tech>
+
 ## v2.0.2
 
 [compare changes](https://github.com/iamkhan21/getbump/compare/v2.0.1...v2.0.2)

@@ -1,6 +1,18 @@
 # Changelog
 
 
+## v1.5.3
+
+[compare changes](https://github.com/iamkhan21/getbump/compare/v1.5.2...v1.5.3)
+
+### 🩹 Fixes
+
+- Update paths to task files in 'commands/prepare.js' ([2659572](https://github.com/iamkhan21/getbump/commit/2659572))
+
+### ❤️ Contributors
+
+- Ivan Khanevich <mail@iamkhan.tech>
+
 ## v1.5.2
 
 [compare changes](https://github.com/iamkhan21/getbump/compare/v1.5.1...v1.5.2)

@@ -16,10 +16,11 @@ module.exports = function (fileInfo, api, options) {
 	// Update microfrontends keys in package.json
 	for (const oldKey of Object.keys(nameMapping)) {
 		if (packageJson.microfrontends?.[oldKey]) {
+			const version = packageJson.microfrontends[oldKey];
+
 			delete packageJson.microfrontends[oldKey];
 
-			packageJson.microfrontends[nameMapping[oldKey]] =
-				packageJson.microfrontends[oldKey];
+			packageJson.microfrontends[nameMapping[oldKey]] = version;
 		}
 	}
 

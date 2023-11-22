@@ -1,6 +1,22 @@
 # Changelog
 
 
+## v1.5.0
+
+[compare changes](https://github.com/iamkhan21/getbump/compare/v1.4.1...v1.5.0)
+
+### 🚀 Enhancements
+
+- Refactored 'commands/prepare.js' and added 'tasks/update.cjs' & 'tasks/prepare.cjs' ([d2273a0](https://github.com/iamkhan21/getbump/commit/d2273a0))
+
+### 🏡 Chore
+
+- Refactor import statements in 'commands/prepare.js' ([7c1d5c2](https://github.com/iamkhan21/getbump/commit/7c1d5c2))
+
+### ❤️ Contributors
+
+- Ivan Khanevich <mail@iamkhan.tech>
+
 ## v1.4.1
 
 [compare changes](https://github.com/iamkhan21/getbump/compare/v1.4.0...v1.4.1)

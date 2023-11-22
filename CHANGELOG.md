@@ -1,6 +1,18 @@
 # Changelog
 
 
+## v1.5.1
+
+[compare changes](https://github.com/iamkhan21/getbump/compare/v1.5.0...v1.5.1)
+
+### 🩹 Fixes
+
+- Change file paths in prepare.js for better module resolution ([f2cd424](https://github.com/iamkhan21/getbump/commit/f2cd424))
+
+### ❤️ Contributors
+
+- Ivan Khanevich <mail@iamkhan.tech>
+
 ## v1.5.0
 
 [compare changes](https://github.com/iamkhan21/getbump/compare/v1.4.1...v1.5.0)

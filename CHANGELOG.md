@@ -1,6 +1,18 @@
 # Changelog
 
 
+## v1.5.2
+
+[compare changes](https://github.com/iamkhan21/getbump/compare/v1.5.1...v1.5.2)
+
+### 🩹 Fixes
+
+- Updated path references in 'commands/prepare.js' ([c8ea7a6](https://github.com/iamkhan21/getbump/commit/c8ea7a6))
+
+### ❤️ Contributors
+
+- Ivan Khanevich <mail@iamkhan.tech>
+
 ## v1.5.1
 
 [compare changes](https://github.com/iamkhan21/getbump/compare/v1.5.0...v1.5.1)

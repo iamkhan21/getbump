@@ -65,7 +65,9 @@ async function transformProdObject(j, root, microfrontends) {
 			(path) => path.parent.node.key && path.parent.node.key.name === "prod",
 		);
 
-	prodObject.find(j.Property).forEach(async (path) => {
+	const paths = prodObject.find(j.Property);
+
+	for (const path of paths) {
 		const key = path.node.key.name;
 		const { baseUrl, version, filePath } = splitString(path.node.value.value);
 		microfrontends[key] = version;
@@ -85,8 +87,7 @@ async function transformProdObject(j, root, microfrontends) {
 				),
 			],
 		);
-	});
-	return prodObject;
+	}
 }
 
 function updatePackageJson(microfrontends) {

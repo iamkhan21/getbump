@@ -33,29 +33,29 @@ module.exports = function (fileInfo, api, options) {
 	const root = j(fileInfo.source);
 
 	// Traverse the AST to find the relevant MemberExpressions
-	root
-		.find(j.MemberExpression, {
-			object: {
-				name: "packageJson",
-			},
-			property: {
-				name: "microfrontends",
-			},
-		})
-		.forEach((path) => {
-			// Check if the parent is a MemberExpression and the property is a Literal
-			const parentPath = path.parentPath;
-			if (
-				parentPath.value.type === "MemberExpression" &&
-				parentPath.value.property.type === "Literal"
-			) {
-				const oldKey = parentPath.value.property.value;
-				// Replace the old key with the new key, if it's in the nameMapping
-				if (nameMapping[oldKey]) {
-					parentPath.value.property.value = nameMapping[oldKey];
-				}
+	const paths = root.find(j.MemberExpression, {
+		object: {
+			name: "packageJson",
+		},
+		property: {
+			name: "microfrontends",
+		},
+	});
+
+	for (const path of paths) {
+		// Check if the parent is a MemberExpression and the property is a Literal
+		const parentPath = path.parentPath;
+		if (
+			parentPath.value.type === "MemberExpression" &&
+			parentPath.value.property.type === "Literal"
+		) {
+			const oldKey = parentPath.value.property.value;
+			// Replace the old key with the new key, if it's in the nameMapping
+			if (nameMapping[oldKey]) {
+				parentPath.value.property.value = nameMapping[oldKey];
 			}
-		});
+		}
+	}
 
 	return root.toSource({ quote: "single" });
 };

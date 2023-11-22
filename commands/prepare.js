@@ -8,8 +8,8 @@ import { run as jscodeshift } from "jscodeshift/src/Runner.js";
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-const TRANSFORM_PATH_PREPARE = path.join(__dirname, "./tasks/prepare.cjs");
-const TRANSFORM_PATH_UPDATE = path.join(__dirname, "./tasks/update.cjs");
+const TRANSFORM_PATH_PREPARE = path.join(__dirname, "../tasks/prepare.cjs");
+const TRANSFORM_PATH_UPDATE = path.join(__dirname, "../tasks/update.cjs");
 
 const MFE_PATH = ["webpack/microFrontendURL.js"];
 

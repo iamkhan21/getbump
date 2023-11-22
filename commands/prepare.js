@@ -11,7 +11,7 @@ const __dirname = path.dirname(__filename);
 const TRANSFORM_PATH_PREPARE = path.join(__dirname, "../tasks/prepare.cjs");
 const TRANSFORM_PATH_UPDATE = path.join(__dirname, "../tasks/update.cjs");
 
-const MFE_PATH = ["webpack/microFrontendURL.js"];
+const MFE_PATH = [path.resolve(process.cwd(), "webpack/microFrontendURL.js")];
 
 async function runCodeshift(transformPath, paths, options = {}) {
 	await jscodeshift(transformPath, paths, { silent: true, ...options });

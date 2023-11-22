@@ -6,23 +6,30 @@
 
 A simple tool to bump your MFEs version number in your package.json file.
 
+---
+
+Bump your package.json MFEs version number (you can use bump or b)
 ```sh
-# Bump your package.json MFEs version number (you can use bump or b)
 npx getbump bump
 ```
 
+Bump your package.json MFEs version number from specific branch and group
 ```sh
-# Bump your package.json MFEs version number from specific branch and group
-npx getbump b -g <project-group> -b <project-branch>
+npx getbump bump -g <project-group> -b <project-branch>
 ```
 
+Prepare your host app to new management of MFEs (you can use prepare or p)
 ```sh
-# Prepare your host app to new management of MFEs
 npx getbump prepare
 ```
 
+Add a new MFE to your host app (you can use add or a)
 ```sh
-# Check is your host app is ready to new management of MFEs (you can use check or c)
+npx getbump add <mfe-gitlab-url-name> <mfe-production-url>
+```
+
+Check is your host app is ready to new management of MFEs (you can use check or c)
+```sh
 npx getbump check
 ```
 

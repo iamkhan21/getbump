@@ -1,6 +1,22 @@
 # Changelog
 
 
+## v2.0.0
+
+[compare changes](https://github.com/iamkhan21/getbump/compare/v1.5.5...v2.0.0)
+
+### 🩹 Fixes
+
+- ⚠️  Update `for` loops to `forEach` for object iteration ([3bc9b6f](https://github.com/iamkhan21/getbump/commit/3bc9b6f))
+
+#### ⚠️ Breaking Changes
+
+- ⚠️  Update `for` loops to `forEach` for object iteration ([3bc9b6f](https://github.com/iamkhan21/getbump/commit/3bc9b6f))
+
+### ❤️ Contributors
+
+- Ivan Khanevich <mail@iamkhan.tech>
+
 ## v1.5.5
 
 [compare changes](https://github.com/iamkhan21/getbump/compare/v1.5.4...v1.5.5)

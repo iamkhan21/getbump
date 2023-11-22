@@ -4,8 +4,9 @@ import { intro, log, outro, spinner, text } from "@clack/prompts";
 import { command } from "cleye";
 import { run as jscodeshift } from "jscodeshift/src/Runner.js";
 
-const TRANSFORM_PATH_PREPARE = path.resolve("./tasks/prepare.cjs");
-const TRANSFORM_PATH_UPDATE = path.resolve("./tasks/update.cjs");
+const TRANSFORM_PATH_PREPARE = path.join(__dirname, './tasks/prepare.cjs');
+const TRANSFORM_PATH_UPDATE = path.join(__dirname, './tasks/update.cjs');
+
 const MFE_PATH = ["webpack/microFrontendURL.js"];
 
 async function runCodeshift(transformPath, paths, options = {}) {

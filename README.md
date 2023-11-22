@@ -17,6 +17,11 @@ npx getbump b -g <project-group> -b <project-branch>
 ```
 
 ```sh
+# Prepare your host app to new management of MFEs
+npx getbump prepare
+```
+
+```sh
 # Check is your host app is ready to new management of MFEs (you can use check or c)
 npx getbump check
 ```

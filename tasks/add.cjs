@@ -110,22 +110,17 @@ module.exports = function (fileInfo, api, options) {
 
 	addMicrofrontend(config);
 
-	for (const env of ["local", "dev", "stage", "prod"]) {
-		// biome-ignore lint: forEach is inbuilt method to iterate nodes
-		root
-			.find(j.ObjectExpression)
-			.filter(
-				(path) => path.parent.node.key && path.parent.node.key.name === env,
-			)
-			.forEach((path) => {
-				path.value.properties.push(
-					j.objectProperty(
-						j.identifier(config.alias),
-						createUrl(j, env, config),
-					),
-				);
-			});
-	}
+	const environments = ["local", "dev", "stage", "prod"];
+	// biome-ignore lint: forEach is inbuilt method to iterate nodes
+	root
+		.find(j.ObjectExpression)
+		.filter((path) => environments.includes(path.parent.node.key?.name))
+		.forEach((path) => {
+			const env = path.parent.node.key.name;
+			path.value.properties.push(
+				j.objectProperty(j.identifier(config.alias), createUrl(j, env, config)),
+			);
+		});
 
 	return root.toSource();
 };

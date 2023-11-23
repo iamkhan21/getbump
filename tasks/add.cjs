@@ -6,7 +6,7 @@ function createUrl(j, type, config) {
 
 	switch (type) {
 		case "local":
-			urlTemplate = `http://localhost:3000/${config.scriptName}`;
+			urlTemplate = `http://localhost:${config.port}/${config.scriptName}`;
 			break;
 		case "dev":
 		case "stage": {
@@ -106,6 +106,7 @@ module.exports = function (fileInfo, api, options) {
 		...parsedUrl,
 		repo: options.meta.repo,
 		prodUrl: options.meta.url,
+		port: options.meta.port,
 	};
 
 	addMicrofrontend(config);

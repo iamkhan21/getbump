@@ -10,12 +10,13 @@ const TRANSFORM_PATH_ADD = path.join(__dirname, "../tasks/add.cjs");
 const MFE_PATH = [path.resolve(process.cwd(), "webpack/microFrontendURL.js")];
 
 async function add(argv) {
-	const { mfeGitlabUrlName, mfeProductionUrl } = argv._;
+	const { mfeGitlabUrlName, mfeProductionUrl, localPort = 3000 } = argv._;
 
 	const options = {
 		meta: {
 			url: mfeProductionUrl,
 			repo: mfeGitlabUrlName,
+			port: localPort,
 		},
 	};
 
@@ -27,7 +28,11 @@ const addCommand = command(
 	{
 		name: "add",
 		alias: "a",
-		parameters: ["<mfe-gitlab-url-name>", "<mfe-production-url>"],
+		parameters: [
+			"<mfe-gitlab-url-name>",
+			"<mfe-production-url>",
+			"[local-port]",
+		],
 		help: {
 			description: "Add new micro-frontend to host app",
 		},

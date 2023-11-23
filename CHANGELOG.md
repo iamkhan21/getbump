@@ -1,6 +1,18 @@
 # Changelog
 
 
+## v2.1.2
+
+[compare changes](https://github.com/iamkhan21/getbump/compare/v2.1.1...v2.1.2)
+
+### 💅 Refactors
+
+- Simplify environment key-value iteration in add task ([cc69a5c](https://github.com/iamkhan21/getbump/commit/cc69a5c))
+
+### ❤️ Contributors
+
+- Ivan Khanevich <mail@iamkhan.tech>
+
 ## v2.1.1
 
 [compare changes](https://github.com/iamkhan21/getbump/compare/v2.1.0...v2.1.1)

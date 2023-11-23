@@ -1,6 +1,18 @@
 # Changelog
 
 
+## v2.2.0
+
+[compare changes](https://github.com/iamkhan21/getbump/compare/v2.1.2...v2.2.0)
+
+### 🚀 Enhancements
+
+- Update the URL template in the add Task; Port is now configurable ([51aa767](https://github.com/iamkhan21/getbump/commit/51aa767))
+
+### ❤️ Contributors
+
+- Ivan Khanevich <mail@iamkhan.tech>
+
 ## v2.1.2
 
 [compare changes](https://github.com/iamkhan21/getbump/compare/v2.1.1...v2.1.2)

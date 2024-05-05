@@ -1,8 +1,14 @@
 # getbump
 
-[![npm version][npm-version-src]][npm-version-href]
-[![npm downloads][npm-downloads-src]][npm-downloads-href]
+[![npm version][npm-version-src]][npm-href]
+[![npm downloads][npm-downloads-src]][npm-href]
 [![bundle][bundle-src]][bundle-href]
+
+[![Scc Count Badge](https://sloc.xyz/github/boyter/scc?category=code)][repo-href]
+[![Scc Count Badge](https://sloc.xyz/github/boyter/scc?category=blanks)][repo-href]
+[![Scc Count Badge](https://sloc.xyz/github/boyter/scc?category=lines)][repo-href]
+[![Scc Count Badge](https://sloc.xyz/github/boyter/scc?category=comments)][repo-href]
+[![Scc Count Badge](https://sloc.xyz/github/boyter/scc?category=cocomo)][repo-href]
 
 A simple tool to bump your MFEs version number in your package.json file.
 
@@ -42,8 +48,8 @@ Published under [MIT License](./LICENSE).
 <!-- Badges -->
 
 [npm-version-src]: https://img.shields.io/npm/v/getbump?style=flat&colorA=18181B&colorB=F0DB4F
-[npm-version-href]: https://npmjs.com/package/getbump
+[npm-href]: https://npmjs.com/package/getbump
 [npm-downloads-src]: https://img.shields.io/npm/dm/getbump?style=flat&colorA=18181B&colorB=F0DB4F
-[npm-downloads-href]: https://npmjs.com/package/getbump
 [bundle-src]: https://img.shields.io/bundlephobia/minzip/getbump?style=flat&colorA=18181B&colorB=F0DB4F
 [bundle-href]: https://bundlephobia.com/result?p=getbump
+[repo-href]: https://github.com/iamkhan21/getbump

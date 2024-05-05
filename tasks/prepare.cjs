@@ -102,12 +102,11 @@ module.exports = async function transformer(file, api) {
 
 	if (isAlreadyModified(root, j)) {
 		throw new Error("File already modified. Skipping transformation.");
-	} else {
-		const microfrontends = {};
-
-		addRequireStatements(root, j);
-		await transformProdObject(j, root, microfrontends);
-		updatePackageJson(microfrontends);
-		return root.toSource();
 	}
+	const microfrontends = {};
+
+	addRequireStatements(root, j);
+	await transformProdObject(j, root, microfrontends);
+	updatePackageJson(microfrontends);
+	return root.toSource();
 };

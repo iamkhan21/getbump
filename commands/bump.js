@@ -61,7 +61,7 @@ async function checkIsProjectHasNewerVersion({
 					projectName,
 					current: currentVersion,
 					latest: latestVersion,
-			  };
+				};
 	} catch (error) {
 		return {
 			projectName,

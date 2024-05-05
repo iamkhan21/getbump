@@ -4,11 +4,11 @@
 [![npm downloads][npm-downloads-src]][npm-href]
 [![bundle][bundle-src]][bundle-href]
 
-[![Scc Count Badge](https://sloc.xyz/github/boyter/scc?category=code)][repo-href]
-[![Scc Count Badge](https://sloc.xyz/github/boyter/scc?category=blanks)][repo-href]
-[![Scc Count Badge](https://sloc.xyz/github/boyter/scc?category=lines)][repo-href]
-[![Scc Count Badge](https://sloc.xyz/github/boyter/scc?category=comments)][repo-href]
-[![Scc Count Badge](https://sloc.xyz/github/boyter/scc?category=cocomo)][repo-href]
+[![Scc Count Badge](https://sloc.xyz/github/iamkhan21/getbump?category=code)][repo-href]
+[![Scc Count Badge](https://sloc.xyz/github/iamkhan21/getbump?category=blanks)][repo-href]
+[![Scc Count Badge](https://sloc.xyz/github/iamkhan21/getbump?category=lines)][repo-href]
+[![Scc Count Badge](https://sloc.xyz/github/iamkhan21/getbump?category=comments)][repo-href]
+[![Scc Count Badge](https://sloc.xyz/github/iamkhan21/getbump?category=cocomo)][repo-href]
 
 A simple tool to bump your MFEs version number in your package.json file.
 

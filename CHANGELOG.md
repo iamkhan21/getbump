@@ -1,6 +1,20 @@
 # Changelog
 
 
+## v2.2.1
+
+[compare changes](https://github.com/iamkhan21/getbump/compare/v2.2.0...v2.2.1)
+
+### 🏡 Chore
+
+- Update dependencies and add new badges ([ac9bd76](https://github.com/iamkhan21/getbump/commit/ac9bd76))
+- Update badges links ([5317ece](https://github.com/iamkhan21/getbump/commit/5317ece))
+- Apply linter and formatter ([a9428ae](https://github.com/iamkhan21/getbump/commit/a9428ae))
+
+### ❤️ Contributors
+
+- Ivan Khanevich <mail@iamkhan.tech>
+
 ## v2.2.0
 
 [compare changes](https://github.com/iamkhan21/getbump/compare/v2.1.2...v2.2.0)
